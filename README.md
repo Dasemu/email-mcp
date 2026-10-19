@@ -1,4 +1,4 @@
-# ZenvairoEmail-mcp
+# email-mcp
 
 An MCP server that exposes IMAP/SMTP email operations (list accounts and folders,
 read/move/delete emails, send mail) as tools for MCP clients.

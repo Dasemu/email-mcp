@@ -130,7 +130,7 @@ def list_folders(account: str) -> list[dict]:
 def create_folder(account: str, folder: str) -> str:
     """Create a new IMAP folder/mailbox. For a nested folder, use the account's
     hierarchy delimiter (check list_folders' `delimiter`, commonly '/' or '.'),
-    e.g. 'Projects/Zenvairo'."""
+    e.g. 'Projects/Personal'."""
     with _imap(account) as conn:
         typ, data = conn.create(f'"{folder}"')
         if typ != "OK":
